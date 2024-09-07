@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "strict": true,
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "jsxImportSource": "react",
+    "types": [
+      "next-auth",
+      "next"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next-plugin-compat",
+        "options": {}
+      }
+    ]
+  },
+  "include": [
+    "next.config.js",
+    "app/**/*.{ts,tsx}",
+    "lib/**/*.{ts,tsx}",
+    "components/**/*.{ts,tsx}",
+    "styles/**/*.{ts,tsx}",
+    "pages/**/*.{ts,tsx}",
+    "middleware/**/*.{ts,tsx}",
+    "utils/**/*.{ts,tsx}",
+    "config/**/*.{ts,tsx}",
+    "types/**/*.{ts,tsx}"
+  ],
+  "exclude": [
+    "node_modules",
+    ".next",
+    "out",
+    "dist",
+    "cypress"
+  ]
+}
